@@ -1,0 +1,9 @@
+header img {
+    width: 400px;
+    object-fit: contain;
+}
+
+footer img {
+    width: 300px;
+    object-fit: contain;
+}
