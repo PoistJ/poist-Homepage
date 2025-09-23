@@ -1,9 +1,79 @@
-header img {
-    width: 400px;
-    object-fit: contain;
+body {
+  margin: 0px;
+}
+
+.about-me-container,
+header img,
+footer img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-container {
+  position: relative;
+  z-index: 1;
+}
+
+.img-container img {
+  width: 400px;
+  object-fit: contain;
+}
+
+.img-text {
+  position: absolute;
+  bottom: 0px;
+  left: 33%;
+  color: white;
+  font-size: 60px;
 }
 
 footer img {
-    width: 300px;
-    object-fit: contain;
+  width: 300px;
+  object-fit: contain;
+}
+
+header {
+  display: flex;
+  padding: 30px 60px 30px 60px;
+  position: relative;
+}
+
+.header-background {
+  position: absolute;
+  background-color: #06d6a0;
+  width: 120vw;
+  height: 500px;
+  top: 0;
+  left: 0;
+  transform: rotate(8deg) translate(-50px, -80px);
+}
+
+.about-me-container {
+  margin: 40px 0px 40px 0px;
+  padding: 40px 25px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  background-color: white;
+}
+
+.description {
+  flex-grow: 1;
+}
+
+.header-icon-container {
+  display: flex;
+  justify-content: end;
+}
+
+.header-icon-container i {
+  font-size: 37px;
+  margin: 0px 0px 0px 18px;
+}
+
+.main {
+  padding: 30px 60px 30px 60px;
+}
+
+footer {
+  padding: 30px 60px 30px 60px;
 }
