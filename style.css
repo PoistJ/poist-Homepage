@@ -1,16 +1,19 @@
-
-h1, .img-container div, .project-screenshot, .project-name {
-    font-family: "Cactus Classical Serif", serif;
+h1,
+.img-container div,
+.project-screenshot,
+.project-name {
+  font-family: "Cactus Classical Serif", serif;
 }
 
 body {
   margin: 0px;
   font-family: "Noto Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 h1 {
-    margin: 0px;
-    font-size: 36px;
+  margin: 0px;
+  font-size: 36px;
 }
 
 .about-me-container,
@@ -26,16 +29,17 @@ footer img,
 }
 
 .img-container img {
-  width: 400px;
+  min-width: 300px;
+  max-width: 30vw;
   object-fit: contain;
 }
 
 .img-text {
   position: absolute;
   bottom: 0px;
-  left: 33%;
+  left: 25%;
   color: white;
-  font-size: 60px;
+  font-size: 5em;
 }
 
 footer img {
@@ -47,16 +51,19 @@ header {
   display: flex;
   padding: 30px 60px 30px 60px;
   position: relative;
+  overflow: hidden;
+  align-items: center;
 }
 
 .header-background {
   position: absolute;
   background-color: #06d6a0;
-  width: 120vw;
+  width: 120%;
   height: 500px;
   top: 0;
   left: 0;
   transform: rotate(8deg) translate(-50px, -80px);
+  z-index: -1;
 }
 
 .about-me-container {
@@ -69,12 +76,13 @@ header {
 }
 
 .about-me-container h1 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .description {
   flex-grow: 1;
   color: #545454;
+  padding-bottom: 20px;
 }
 
 .header-icon-container {
@@ -101,7 +109,7 @@ header {
 }
 
 .main h1 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .project-screenshot {
@@ -151,7 +159,7 @@ footer {
 }
 
 .contact-description {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .address {
@@ -159,9 +167,9 @@ footer {
 }
 
 .phone-container {
-    display: flex;
-    align-items: center;
-    margin: 6px 0px;
+  display: flex;
+  align-items: center;
+  margin: 6px 0px;
 }
 
 .phone-container svg {
@@ -169,16 +177,168 @@ footer {
 }
 
 .email-container {
-    display: flex;
-    align-items: center;
-    margin: 6px 0px 18px 0px;
+  display: flex;
+  align-items: center;
+  margin: 6px 0px 18px 0px;
 }
 
 .email-container svg {
-    width: 34px;
+  width: 34px;
 }
 
 .footer-contact-buttons i {
-    font-size: 36px;
-    padding-right: 16px;
+  font-size: 36px;
+  padding-right: 16px;
+}
+
+@media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .about-me-container {
+    box-shadow: none;
+  }
+
+  header {
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+
+  .header-icon-container {
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .about-me-container {
+    margin: 0px;
+    padding: 30px 0px;
+  }
+
+  .about-me-container h1 {
+    text-align: center;
+    font-size: 3em;
+  }
+
+  .img-container {
+    padding-top: 30px;
+    margin: auto;
+  }
+
+  .img-container img {
+    min-width: 90vw;
+  }
+
+  .img-text {
+    left: 18%;
+    bottom: 0px;
+  }
+
+  .description {
+    font-size: 1.5em;
+    line-height: 40px;
+  }
+
+  .works-and-projects {
+    display: block;
+  }
+
+  .main h1 {
+    text-align: center;
+  }
+
+  .main {
+    padding: 30px 30px 100px 30px;
+  }
+
+  .project-container {
+    margin-bottom: 80px;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 50px 0px 0px 0px;
+  }
+
+  footer img {
+    order: 2;
+    width: 100vw;
+  }
+
+  .contact-information {
+    order: 1;
+    padding: 0px 20px 80px 20px;
+  }
+
+  .contact-information h1 {
+    text-align: center;
+    font-size: 2.3em;
+  }
+
+  .contact-description {
+    font-size: 1.4em;
+  }
+
+  .phone-container svg,
+  .email-container svg {
+    display: none;
+  }
+
+  .footer-contact-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-contact-buttons i {
+    font-size: 60px;
+    margin: 0px 10px 0px 10px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  header {
+    display: block;
+  }
+
+  .img-container {
+    display: block;
+    float: left;
+    z-index: 2;
+    margin-right: 30px;
+  }
+
+  .about-me-container {
+    margin: 100px 0px 0px 50px;
+    padding-top: 70px;
+    display: block;
+    min-height: 400px;
+    max-width: 70vw;
+  }
+
+  .img-text {
+    top: 0px;
+    left: 350px;
+  }
+
+  .about-me-container h1 {
+    text-align: center;
+  }
+
+  .description {
+    line-height: 30px;
+  }
+
+  .header-icon-container {
+    display: none;
+  }
+
+  .main {
+    margin-top: 0px;
+    margin-bottom: 100px;
+  }
+
+  .works-and-projects {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+  }
 }
