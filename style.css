@@ -88,8 +88,34 @@ footer {
 }
 
 .project-screenshot {
-    height: 140px;
-    line-height: 140px;
+    height: 200px;
+    line-height: 200px;
     text-align: center;
     color: white;
+    font-size: 2em;
+}
+
+.project-name-row {
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+}
+
+.project-name {
+    flex-grow: 1;
+    font-size: 1.1em;
+}
+
+.project-name-row i {
+    font-size: 24px;
+}
+
+.project-name-row svg {
+    width: 28px;
+    margin-left: 16px;
+}
+
+.project-description {
+    padding: 0px 16px 16px 16px;
+    min-height: 100px;
 }
