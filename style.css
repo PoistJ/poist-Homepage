@@ -1,5 +1,16 @@
+
+h1, .img-container div, .project-screenshot, .project-name {
+    font-family: "Cactus Classical Serif", serif;
+}
+
 body {
   margin: 0px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+h1 {
+    margin: 0px;
+    font-size: 36px;
 }
 
 .about-me-container,
@@ -57,8 +68,13 @@ header {
   background-color: white;
 }
 
+.about-me-container h1 {
+    margin-bottom: 20px;
+}
+
 .description {
   flex-grow: 1;
+  color: #545454;
 }
 
 .header-icon-container {
@@ -72,50 +88,97 @@ header {
 }
 
 .main {
-  padding: 30px 60px 30px 60px;
-}
-
-footer {
-  padding: 30px 60px 30px 60px;
+  padding: 30px 60px 100px 60px;
+  margin-top: 40px;
 }
 
 .works-and-projects {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    grid-auto-flow: row;
-    grid-gap: 44px 30px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-auto-flow: row;
+  grid-gap: 44px 30px;
+}
+
+.main h1 {
+    margin-bottom: 20px;
 }
 
 .project-screenshot {
-    height: 200px;
-    line-height: 200px;
-    text-align: center;
-    color: white;
-    font-size: 2em;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  color: white;
+  font-size: 2em;
 }
 
 .project-name-row {
-    display: flex;
-    align-items: center;
-    padding: 6px 16px;
+  display: flex;
+  align-items: center;
+  padding: 6px 16px;
 }
 
 .project-name {
-    flex-grow: 1;
-    font-size: 1.1em;
+  flex-grow: 1;
+  font-size: 1.4em;
 }
 
 .project-name-row i {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .project-name-row svg {
-    width: 28px;
-    margin-left: 16px;
+  width: 28px;
+  margin-left: 16px;
 }
 
 .project-description {
-    padding: 0px 16px 16px 16px;
-    min-height: 100px;
+  padding: 6px 16px 16px 16px;
+  min-height: 100px;
+  color: #545454;
+}
+
+footer {
+  background-color: #06d6a0;
+  display: flex;
+  padding: 50px 60px 50px 60px;
+}
+
+.contact-information {
+  flex-grow: 1;
+  padding: 0px 60px;
+  color: black;
+}
+
+.contact-description {
+    margin-top: 20px;
+}
+
+.address {
+  margin: 20px 0px;
+}
+
+.phone-container {
+    display: flex;
+    align-items: center;
+    margin: 6px 0px;
+}
+
+.phone-container svg {
+  width: 40px;
+}
+
+.email-container {
+    display: flex;
+    align-items: center;
+    margin: 6px 0px 18px 0px;
+}
+
+.email-container svg {
+    width: 34px;
+}
+
+.footer-contact-buttons i {
+    font-size: 36px;
+    padding-right: 16px;
 }
